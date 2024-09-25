@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a:visited {
+    color: white;
+}
+
+
+@font-face {
+    font-family: CooperHewitt-Thin;
+    src: url("/Fonts/CooperHewitt-Thin.otf") format("truetype");
+}
+
+@font-face {
+    font-family: Aileron-Thin;
+    src: url("/Fonts/Aileron-Thin.otf") format("truetype");
+}
+
+
+
+header {
+    text-align: center;
+    background-color: rgb(12, 28, 134);
+    padding: 10px;
+    color: white;
+
+}
+
+header a {
+    text-decoration: underline;
+    padding: 70px;
+    color: white;
+}
+
+#me {
+    width: 220px;
+
+    padding-right: 25px;
+}
+
+.me {
+    display: flex;
+}
+
+
+img {
+    width: 400px;
+}
+
+.app {
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.google {
+    font-family: CooperHewitt-Thin;
+    font-size: 70px;
+}
+
+nav {
+    font-family: Aileron-Thin;
+}
+
+
+#about-me {
+    font-family: CooperHewitt-Thin;
+    margin: 0 auto;
+    width: 1000px;
+    padding-bottom: 50px;
+
+}
+
+.me {
+    font-size: large;
+}
+
+#contact-me {
+    text-align: center;
+    background-color: rgb(12, 28, 134);
+    color: white;
+    padding: 40px;
+}
+
+#portfolio {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(223, 220, 220);
+    text-align: center;
+}
+ 
+#app-1 img {
+    transition: transform 1s
+}
+
+
+#app-1 img:hover {
+    transform: scale(1.08);
+}
+
+#app-2 img {
+    transition: transform 1s
+}
+
+
+#app-2 img:hover {
+    transform: scale(1.08);
+}
+
+#app-3 img {
+    transition: transform 1s
+}
+
+
+#app-3 img:hover {
+    transform: scale(1.08);
+
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+p {
+    font-family: Aileron-Thin;
+    font-size: 17px;
+}
