@@ -1,33 +1,37 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../App.css'; // Import your CSS file
+
 export default function Nav() {
-    const linkStyle = { border: '1px black', padding: '5px' };
-  
-    return (
+  return (
+    <div>
       <header>
-        <h1>James Whatcott</h1>
-      <nav className="main-header-menu">
-        <section
-          style={{
-            display: 'flex',
-            fontFamily: 'helvetica',
-            flexDirection: 'row',
-            alignItems: 'flex-start',
-            justifyContent: 'flex-start',
-          }}
-        >
-          <div style={linkStyle}>
-            <a href="#">About Me</a>
-          </div>
-          <div style={linkStyle}>
-            <a href="#">Portfolio</a>
-          </div>
-          <div style={linkStyle}>
-            <a href="#">Contact Me</a>
-          </div>
-          <div style={linkStyle}>
-            <a href="#">Resume</a>
-          </div>
-        </section>
-      </nav>
-      </header>
-    );
-  }
+    <h1 class="google">James Whatcott</h1>
+    <nav>
+      
+        
+          <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
+            About Me
+          </NavLink>
+        
+      
+          <NavLink to="/portfolio" className={({ isActive }) => (isActive ? 'active' : '')}>
+            Portfolio
+          </NavLink>
+        
+        
+          <NavLink to="/resume" className={({ isActive }) => (isActive ? 'active' : '')}>
+            Resume
+          </NavLink>
+        
+        
+          <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
+            Contact
+          </NavLink>
+        
+      
+    </nav>
+    </header>
+    </div>
+  );
+}

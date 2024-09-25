@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Nav from './components/Nav';
 import AboutMe from './components/AboutMe';
-import ContactMe from './components/ContactMe';
+import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 
@@ -18,7 +18,7 @@ export default function App() {
           <Route path="/" element={<AboutMe />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<ContactMe />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
           
         </Routes>
