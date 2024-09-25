@@ -65,3 +65,5 @@ build/
 *.o
 *.pyc
 *.class
+
+package-lock.json
