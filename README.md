@@ -65,6 +65,15 @@ To get a local copy up and running, follow these simple steps.
 
 
 ## Screenshots
+<img width="1233" alt="Screenshot 2024-09-25 at 9 17 37 PM" src="https://github.com/user-attachments/assets/c317dc51-ed71-41f1-b541-ec16a5cbd0c7">
+
+<img width="1282" alt="Screenshot 2024-09-25 at 9 17 51 PM" src="https://github.com/user-attachments/assets/e280b1fc-2698-4fe2-8b18-dd410983a6de">
+
+<img width="1270" alt="Screenshot 2024-09-25 at 9 17 59 PM" src="https://github.com/user-attachments/assets/4b989c10-aad1-4c84-a89f-313d139fb26a">
+
+<img width="1234" alt="Screenshot 2024-09-25 at 9 18 06 PM" src="https://github.com/user-attachments/assets/ac9b757b-9273-4ddc-8a6b-d29fb1a9ff0b">
+
+
 
 ## Netlify site
 
