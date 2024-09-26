@@ -6,23 +6,24 @@ import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 
-
-// Pass users array to the List component as a prop
 export default function App() {
   return (
     <Router>
-    <div>
-      <Nav />
-      <Routes>
-          <Route path="/" element={<AboutMe />} />
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/resume" element={<Resume />} />
-          
-        </Routes>
-    </div>
+      <div className="app-container">
+        <Nav />
+        <main className="content">
+          <Routes>
+            <Route path="/" element={<AboutMe />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </main>
+        <Footer /> 
+      </div>
     </Router>
   );
 }
