@@ -6,6 +6,10 @@ export default function Portfolio() {
     return (
         <section id="portfolio">
             <h2>Portfolio</h2>
+            <div id="app-0">
+                <a href="#app-0"><h3>Continue</h3></a>
+                <a href="https://github.com/jameswhatcott/continue"><img src='/Assets/games page.png' alt="Continue"/></a>
+            </div>
             <div id="app-1">
                 <a href="#app-1"><h3>What's My Sky?</h3></a>
                 <a href="https://jameswhatcott.github.io/constellation-weather-app/"><img src='/Assets/constellation-weather pic.jpeg' alt="Constellation Weather App"/></a>
