@@ -1,7 +1,7 @@
 import React from 'react';
-import constellationWeatherPic from '../Assets/constellation-weather pic.jpeg';
-import weatherAppPic from '../Assets/weather app pic.png';
-import taskManagerPic from '../Assets/Task manager pic.png';
+import constellationWeatherPic from '../../Assets/constellation weather pic.png';
+import weatherAppPic from '../../Assets/weather app pic.png';
+import taskManagerPic from '../../Assets/Task manager pic.png';
 
 export default function Portfolio() {
   
