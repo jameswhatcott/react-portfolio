@@ -1,7 +1,7 @@
+import headshot from "/Assets/headshot.jpeg";
+
 export default function AboutMe() {
   
-    import headshot from "/Assets/headshot.jpeg";
-
     return (
         <section id="about-me">
         <h2>About Me</h2>
@@ -21,4 +21,4 @@ export default function AboutMe() {
         </div>
     </section>
     );
-  }
+}
