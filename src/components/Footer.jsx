@@ -7,16 +7,12 @@ export default function Footer() {
       <a href="https://github.com/jameswhatcott" target="_blank" rel="noopener noreferrer" style={styles.link}>
         <FaGithub size={30} />
       </a>
-      <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer" style={styles.link}>
+      <a href="https://www.linkedin.com/in/jameswhatcott" target="_blank" rel="noopener noreferrer" style={styles.link}>
         <FaLinkedin size={30} />
       </a>
       <a href="https://facebook.com/james.whatcott" target="_blank" rel="noopener noreferrer" style={styles.link}>
         <FaFacebook size={30} />
       </a>
-      {/* If you prefer Twitter instead, use the following line:
-      <a href="https://twitter.com/your-twitter-username" target="_blank" rel="noopener noreferrer" style={styles.link}>
-        <FaTwitter size={30} />
-      </a> */}
     </footer>
   );
 }
