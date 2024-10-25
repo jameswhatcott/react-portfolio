@@ -1,20 +1,14 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
-export default function Contact() {
+function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({ name: '', email: '', message: '' });
-
-  // Regular expression for email validation
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  // Handle input changes
   const handleChange = (event) => {
     const { name, value } = event.target;
-
-    // Update form data
     setFormData({ ...formData, [name]: value });
-
-    // Validate fields as user types
     if (value.trim() === '') {
       setErrors({ ...errors, [name]: 'This field is required' });
     } else {
@@ -26,30 +20,27 @@ export default function Contact() {
     }
   };
 
-  // Handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    // Check if any field is empty
     const newErrors = {};
     Object.keys(formData).forEach((field) => {
       if (formData[field].trim() === '') {
         newErrors[field] = 'This field is required';
       }
     });
-
-    // Check for valid email address
     if (formData.email && !emailRegex.test(formData.email)) {
       newErrors.email = 'Please enter a valid email address';
     }
-
     setErrors(newErrors);
-
-    // If there are no errors, proceed with form submission
     if (Object.keys(newErrors).length === 0) {
-      alert('Form submitted successfully!');
-      // Clear form
-      setFormData({ name: '', email: '', message: '' });
+      emailjs.send('service_hfkcjy4', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+        .then((response) => {
+          alert('Form submitted successfully!');
+          setFormData({ name: '', email: '', message: '' });
+        })
+        .catch((error) => {
+          alert('Failed to send the message, please try again.');
+        });
     }
   };
 
@@ -69,7 +60,6 @@ export default function Contact() {
           />
           {errors.name && <span className="error">{errors.name}</span>}
         </div>
-
         <div className="form-field">
           <label htmlFor="email">Email:</label>
           <input
@@ -82,7 +72,6 @@ export default function Contact() {
           />
           {errors.email && <span className="error">{errors.email}</span>}
         </div>
-
         <div className="form-field">
           <label htmlFor="message">Message:</label>
           <textarea
@@ -94,9 +83,10 @@ export default function Contact() {
           />
           {errors.message && <span className="error">{errors.message}</span>}
         </div>
-
         <button type="submit">Submit</button>
       </form>
     </div>
   );
 }
+
+export default Contact;
