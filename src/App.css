@@ -2,6 +2,9 @@ a:visited {
     color: white;
 }
 
+a {
+  color: white;
+}
 
 @font-face {
     font-family: CooperHewitt-Thin;
