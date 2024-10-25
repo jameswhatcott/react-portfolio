@@ -77,5 +77,4 @@ To get a local copy up and running, follow these simple steps.
 
 ## Netlify site
 
-https://66f4c8b6ace32f3a995b6733--majestic-brioche-fe3e2b.netlify.app/ 
-
+https://majestic-brioche-fe3e2b.netlify.app/
