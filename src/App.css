@@ -86,12 +86,30 @@ nav {
 }
 
 #portfolio {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: rgb(223, 220, 220);
-    text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(223, 220, 220);
+  text-align: center;
+}
+
+#portfolio > div {
+  margin-bottom: 30px; /* Add space between each div */
+}
+
+#portfolio img {
+  width: 100%; /* Ensure images take full width of their container */
+  max-width: 500px; /* Set a max width for the images */
+  height: auto; /* Maintain aspect ratio */
 }
  
+#app-0 img {
+    transition: transform 1s
+}
+
+#app-0 img:hover {
+    transform: scale(1.08);
+}
+
 #app-1 img {
     transition: transform 1s
 }
