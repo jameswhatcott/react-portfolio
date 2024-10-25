@@ -7,7 +7,7 @@ export default function Resume() {
       
       {/* Downloadable Resume Link */}
       <div style={styles.resumeLink}>
-        <a href="../../Assets/James_Whatcott_Resume.pdf" download style={styles.link}>
+        <a href="/docs/James_Whatcott_Resume (3).pdf" download style={styles.link}>
           Download My Resume
         </a>
       </div>

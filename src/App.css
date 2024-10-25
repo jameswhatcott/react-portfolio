@@ -173,6 +173,12 @@ nav {
     font-weight: bold; /* Make active link bold */
     border-bottom: 2px solid rgb(255, 145, 0); /* Optional: underline for active link */
   }
+
+  .nav-container {
+    margin-bottom: 20px; /* Adjust the value as needed */
+  }
+
+  -----------------------------------------------------------------------------
   
   
   /* Add any other global styles below */

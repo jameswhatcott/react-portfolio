@@ -4,7 +4,7 @@ import '../App.css'; // Import your CSS file
 
 export default function Nav() {
   return (
-    <div>
+    <div className="nav-container">
       <header>
     <h1 class="google">James Whatcott</h1>
     <nav>
