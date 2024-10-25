@@ -159,7 +159,7 @@ nav {
   
   nav a {
     text-decoration: none; /* Remove underline */
-    color: black; /* Default link color */
+    color: rgb(255, 255, 255); /* Default link color */
     padding: 10px 15px; /* Padding for better click area */
     transition: background-color 0.3s; /* Smooth transition for hover */
   }
