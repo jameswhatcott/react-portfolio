@@ -33,7 +33,17 @@ function Contact() {
     }
     setErrors(newErrors);
     if (Object.keys(newErrors).length === 0) {
-      emailjs.send('service_hfkcjy4', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+      emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          user_name: formData.name,   // Ensure these match your EmailJS template fields
+          user_email: formData.email,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      
         .then((response) => {
           alert('Form submitted successfully!');
           setFormData({ name: '', email: '', message: '' });
