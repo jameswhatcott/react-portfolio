@@ -6,8 +6,8 @@ export default function AboutMe() {
         <section id="about-me">
         <h2>About Me</h2>
                 <div className="me">
-                    <img id="me" src='/Assets/headshot.jpeg' alt="headshot"/>
-                    <p>I'm an aspiring web developer based in Lufkin, Texas, passionate 
+                <img id="me" src='/images/headshot.jpeg' alt="headshot"/>                    
+                <p>I'm an aspiring web developer based in Lufkin, Texas, passionate 
                         about creating valuable tools for companies and organizations. 
                         My journey into coding began with a digital marketing course, 
                         where I discovered the crucial role of website performance. 
