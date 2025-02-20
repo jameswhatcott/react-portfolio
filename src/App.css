@@ -33,9 +33,10 @@ header a {
 }
 
 #me {
-    width: 220px;
-
-    padding-right: 25px;
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+  
 }
 
 .me {
@@ -73,6 +74,8 @@ nav {
     padding-bottom: 50px;
 
 }
+
+
 
 .me {
     font-size: large;
