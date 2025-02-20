@@ -7,16 +7,20 @@ export default function AboutMe() {
         <h2>About Me</h2>
                 <div className="me">
                 <img id="me" src='/images/headshot.jpeg' alt="headshot"/>                    
-                <p>I'm an aspiring web developer based in Lufkin, Texas, passionate 
-                        about creating valuable tools for companies and organizations. 
-                        My journey into coding began with a digital marketing course, 
-                        where I discovered the crucial role of website performance. 
-                        This sparked my interest in JavaScript and led me to explore 
-                        coding through platforms like Codecademy and Mimo. I am currently 
-                        enrolled in a coding bootcamp with The Ohio State University, 
-                        where I'm honing my skills. I aim to contribute to a dynamic tech 
-                        company, working on both front-end and back-end development to 
-                        create impactful software solutions.
+                <p>I'm a full-stack developer based in Lufkin, Texas, with a 
+                    passion for creating innovative solutions that drive success 
+                    for businesses and organizations. My coding journey started 
+                    with a digital marketing course, where I discovered the 
+                    critical importance of website performance. This ignited my 
+                    curiosity about JavaScript and inspired me to dive deeper into 
+                    coding through platforms like Codecademy and Mimo. After
+                    completing a coding bootcamp at The Ohio State University, I
+                    landed my first role as a developer at Blake Learning Solutions. 
+                    There, I contribute to building websites for clients and 
+                    developing Learning Management System (LMS) solutions. I’m eager 
+                    to bring my skills to a dynamic tech company, where I can 
+                    contribute to both front-end and back-end development, delivering 
+                    software solutions that make an impact.
                     </p>
                 </div>
     </section>
