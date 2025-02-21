@@ -49,6 +49,8 @@ img {
 }
 
 .app {
+
+  color: blue;
     
 }
 
@@ -93,6 +95,12 @@ nav {
   padding-bottom: 30px;
   background-color: rgb(223, 220, 220);
   text-align: center;
+}
+
+#portfolio h2 {
+  text-decoration: underline;
+  font-size: xx-large;
+  margin-bottom: 20px; /* Add space below the heading */
 }
 
 #portfolio > div {
