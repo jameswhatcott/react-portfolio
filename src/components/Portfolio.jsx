@@ -8,7 +8,7 @@ export default function Portfolio() {
             <h2>Portfolio</h2>
             <div id="app-0" class="app">
                 <h3>Continue</h3>
-                <a href="https://github.com/jameswhatcott/continue"><img src='/images/games page.png' alt="Continue"/></a>
+                <a href="https://continue-4su3.onrender.com/"><img src='/images/games page.png' alt="Continue"/></a>
             </div>
             <div id="app-1" class="app">
                 <h3>What's My Sky?</h3>
