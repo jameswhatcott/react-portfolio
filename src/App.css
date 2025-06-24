@@ -149,6 +149,16 @@ nav {
 
 }
 
+#app-4 img {
+    transition: transform 1s
+}
+
+
+#app-4 img:hover {
+    transform: scale(1.08);
+
+}
+
 h2 {
     font-size: xx-large;
 }
