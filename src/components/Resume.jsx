@@ -19,6 +19,8 @@ export default function Resume() {
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
+          <li>Java</li>
+          <li>Spring Boot</li>
           <li>React</li>
           <li>Node.js</li>
           <li>Express</li>
