@@ -159,6 +159,16 @@ nav {
 
 }
 
+#app-5 img {
+  transition: transform 1s
+}
+
+
+#app-5 img:hover {
+  transform: scale(1.08);
+
+}
+
 h2 {
     font-size: xx-large;
 }
