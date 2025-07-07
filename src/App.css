@@ -1,0 +1,301 @@
+a:visited {
+    color: white;
+}
+
+a {
+  color: white;
+}
+
+@font-face {
+    font-family: CooperHewitt-Thin;
+    src: url("/Fonts/CooperHewitt-Thin.otf") format("truetype");
+}
+
+@font-face {
+    font-family: Aileron-Thin;
+    src: url("/Fonts/Aileron-Thin.otf") format("truetype");
+}
+
+
+
+header {
+    text-align: center;
+    background-color: rgb(12, 28, 134);
+    padding: 10px;
+    color: white;
+
+}
+
+header a {
+    text-decoration: underline;
+    padding: 70px;
+    color: white;
+}
+
+#me {
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+  
+}
+
+.me {
+    display: flex;
+}
+
+
+img {
+    width: 400px;
+}
+
+.app {
+
+  color: blue;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.google {
+    font-family: CooperHewitt-Thin;
+    font-size: 70px;
+}
+
+nav {
+    font-family: Aileron-Thin;
+}
+
+
+#about-me {
+    font-family: CooperHewitt-Thin;
+    margin: 0 auto;
+    width: 1000px;
+    padding-bottom: 50px;
+
+}
+
+
+
+.me {
+    font-size: large;
+}
+
+#contact-me {
+    text-align: center;
+    background-color: rgb(12, 28, 134);
+    color: white;
+    padding: 40px;
+}
+
+#portfolio {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(223, 220, 220);
+  text-align: center;
+}
+
+#portfolio h2 {
+  text-decoration: underline;
+  font-size: xx-large;
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+#portfolio > div {
+  margin-bottom: 30px; /* Add space between each div */
+}
+
+#portfolio img {
+  width: 100%; /* Ensure images take full width of their container */
+  max-width: 500px; /* Set a max width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+ 
+#app-0 img {
+    transition: transform 1s
+}
+
+#app-0 img:hover {
+    transform: scale(1.08);
+}
+
+#app-1 img {
+    transition: transform 1s
+}
+
+
+#app-1 img:hover {
+    transform: scale(1.08);
+}
+
+#app-2 img {
+    transition: transform 1s
+}
+
+
+#app-2 img:hover {
+    transform: scale(1.08);
+}
+
+#app-3 img {
+    transition: transform 1s
+}
+
+
+#app-3 img:hover {
+    transform: scale(1.08);
+
+}
+
+#app-4 img {
+    transition: transform 1s
+}
+
+
+#app-4 img:hover {
+    transform: scale(1.08);
+
+}
+
+#app-5 img {
+  transition: transform 1s
+}
+
+
+#app-5 img:hover {
+  transform: scale(1.08);
+
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+p {
+    font-family: Aileron-Thin;
+    font-size: 17px;
+}
+
+---------------------------------------------------------------------------------
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    gap: 20px; /* Space between links */
+    padding: 10px; /* Add some padding around the nav */
+    background-color: #f8f8f8; /* Optional: background color for the nav */
+  }
+  
+  nav a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(255, 255, 255); /* Default link color */
+    padding: 10px 15px; /* Padding for better click area */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+  }
+  
+  nav a:hover {
+    background-color: #e0e0e0; /* Optional: change background on hover */
+  }
+  
+  nav a.active {
+    color: rgb(255, 145, 0); /* Change text color for active link */
+    font-weight: bold; /* Make active link bold */
+    border-bottom: 2px solid rgb(255, 145, 0); /* Optional: underline for active link */
+  }
+
+  .nav-container {
+    margin-bottom: 20px; /* Adjust the value as needed */
+  }
+
+  -----------------------------------------------------------------------------
+  
+  
+  /* Add any other global styles below */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* App.css */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
