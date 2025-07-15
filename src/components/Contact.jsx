@@ -1,102 +1,178 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-function Contact() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [errors, setErrors] = useState({ name: '', email: '', message: '' });
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    projectType: '',
+    budget: '',
+    timeline: '',
+    message: ''
+  });
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
-    if (value.trim() === '') {
-      setErrors({ ...errors, [name]: 'This field is required' });
-    } else {
-      if (name === 'email' && !emailRegex.test(value)) {
-        setErrors({ ...errors, email: 'Please enter a valid email address' });
-      } else {
-        setErrors({ ...errors, [name]: '' });
-      }
-    }
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const newErrors = {};
-    Object.keys(formData).forEach((field) => {
-      if (formData[field].trim() === '') {
-        newErrors[field] = 'This field is required';
-      }
-    });
-    if (formData.email && !emailRegex.test(formData.email)) {
-      newErrors.email = 'Please enter a valid email address';
-    }
-    setErrors(newErrors);
-    if (Object.keys(newErrors).length === 0) {
-      emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          user_name: formData.name,   // Ensure these match your EmailJS template fields
-          user_email: formData.email,
-          message: formData.message,
-        },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      
-        .then((response) => {
-          alert('Form submitted successfully!');
-          setFormData({ name: '', email: '', message: '' });
-        })
-        .catch((error) => {
-          alert('Failed to send the message, please try again.');
-        });
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
   };
 
   return (
-    <div className="contact-form-container">
-      <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit} className="contact-form">
-        <div className="form-field">
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            onBlur={handleChange}
-          />
-          {errors.name && <span className="error">{errors.name}</span>}
+    <section id="contact">
+      <div className="contact-header">
+        <h2>Let's Work Together</h2>
+        <p className="contact-subtitle">Ready to build something amazing? Get in touch for a free consultation.</p>
+      </div>
+      
+      <div className="contact-content">
+        <div className="contact-info">
+          <h3>Why Work With Me?</h3>
+          <div className="benefits">
+            <div className="benefit-item">
+              <h4> Results-Driven</h4>
+              <p>Focus on solutions that drive measurable business growth</p>
+            </div>
+            <div className="benefit-item">
+              <h4>⚡ Fast Delivery</h4>
+              <p>Quick turnaround times without compromising quality</p>
+            </div>
+            <div className="benefit-item">
+              <h4>💬 Clear Communication</h4>
+              <p>Regular updates and transparent project management</p>
+            </div>
+            <div className="benefit-item">
+              <h4> Ongoing Support</h4>
+              <p>Long-term partnership for maintenance and updates</p>
+            </div>
+            <div className="benefit-item">
+              <h4>💰 Competitive Pricing</h4>
+              <p>Direct developer rates without agency overhead</p>
+            </div>
+            <div className="benefit-item">
+              <h4>🛠️ Full-Stack Expertise</h4>
+              <p>End-to-end development from concept to deployment</p>
+            </div>
+          </div>
         </div>
-        <div className="form-field">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            onBlur={handleChange}
-          />
-          {errors.email && <span className="error">{errors.email}</span>}
+        
+        <div className="contact-form-container">
+          <h3>Start Your Project</h3>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <div className="form-row">
+              <div className="form-field">
+                <label htmlFor="name">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-field">
+                <label htmlFor="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </div>
+            
+            <div className="form-field">
+              <label htmlFor="company">Company/Organization</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                value={formData.company}
+                onChange={handleChange}
+              />
+            </div>
+            
+            <div className="form-row">
+              <div className="form-field">
+                <label htmlFor="projectType">Project Type</label>
+                <select
+                  id="projectType"
+                  name="projectType"
+                  value={formData.projectType}
+                  onChange={handleChange}
+                >
+                  <option value="">Select project type</option>
+                  <option value="web-app">Custom Web Application</option>
+                  <option value="ecommerce">E-commerce Website</option>
+                  <option value="api">API Development</option>
+                  <option value="optimization">Performance Optimization</option>
+                  <option value="consulting">Technical Consulting</option>
+                  <option value="employment">Employment Opportunity</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div className="form-field">
+                <label htmlFor="budget">Budget Range</label>
+                <select
+                  id="budget"
+                  name="budget"
+                  value={formData.budget}
+                  onChange={handleChange}
+                >
+                  <option value="">Select budget range</option>
+                  <option value="under-5k">Under $5,000</option>
+                  <option value="5k-10k">$5,000 - $10,000</option>
+                  <option value="10k-25k">$10,000 - $25,000</option>
+                  <option value="25k-plus">$25,000+</option>
+                  <option value="employment">Employment Discussion</option>
+                </select>
+              </div>
+            </div>
+            
+            <div className="form-field">
+              <label htmlFor="timeline">Timeline</label>
+              <select
+                id="timeline"
+                name="timeline"
+                value={formData.timeline}
+                onChange={handleChange}
+              >
+                <option value="">Select timeline</option>
+                <option value="asap">ASAP</option>
+                <option value="1-2-months">1-2 months</option>
+                <option value="3-6-months">3-6 months</option>
+                <option value="flexible">Flexible</option>
+              </select>
+            </div>
+            
+            <div className="form-field">
+              <label htmlFor="message">Project Details *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Tell us about your project goals, requirements, and any specific features you need..."
+                required
+              ></textarea>
+            </div>
+            
+            <button type="submit" className="submit-btn">
+              Send Message
+            </button>
+          </form>
         </div>
-        <div className="form-field">
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            onBlur={handleChange}
-          />
-          {errors.message && <span className="error">{errors.message}</span>}
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+      </div>
+    </section>
   );
 }
-
-export default Contact;
