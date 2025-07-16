@@ -32,7 +32,7 @@ export default function Portfolio() {
             <strong>Business Impact:</strong> Streamlined task management for teams<br/>
             <strong>Technical Achievement:</strong> Spring Boot microservice architecture
           </p>
-          <a href="https://todo-api-fy9m.onrender.com/" className="project-link">
+          <a href="https://github.com/jameswhatcott/todo_api" className="project-link">
             <img src='/images/todo-api.png' alt="Todo API"/>
           </a>
           <div className="tech-stack">
