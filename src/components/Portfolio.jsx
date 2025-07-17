@@ -44,6 +44,23 @@ export default function Portfolio() {
         </div>
         
         <div id="app-2" className="project-card">
+          <h3>Angular Pokedex Application</h3>
+          <p className="project-description">
+            <strong>Business Impact:</strong> Interactive data visualization and user engagement<br/>
+            <strong>Technical Achievement:</strong> Modern Angular application with API integration
+          </p>
+          <a href="https://pokedex-5mx0.onrender.com/" className="project-link">
+            <img src='/images/pokedex.png' alt="Angular Pokedex"/>
+          </a>
+          <div className="tech-stack">
+            <span className="tech-tag">Angular</span>
+            <span className="tech-tag">TypeScript</span>
+            <span className="tech-tag">REST API</span>
+            <span className="tech-tag">Responsive Design</span>
+          </div>
+        </div>
+        
+        <div id="app-3" className="project-card">
           <h3>Interactive Gaming Platform</h3>
           <p className="project-description">
             <strong>Business Impact:</strong> Engaging user experience with modern UI<br/>
@@ -60,7 +77,7 @@ export default function Portfolio() {
           </div>
         </div>
         
-        <div id="app-3" className="project-card">
+        <div id="app-4" className="project-card">
           <h3>What's My Sky? Weather App</h3>
           <p className="project-description">
             <strong>Business Impact:</strong> User-friendly weather information platform<br/>
@@ -77,7 +94,7 @@ export default function Portfolio() {
           </div>
         </div>
         
-        <div id="app-4" className="project-card">
+        <div id="app-5" className="project-card">
           <h3>Weather Dashboard</h3>
           <p className="project-description">
             <strong>Business Impact:</strong> Clean, intuitive weather monitoring<br/>
@@ -94,7 +111,7 @@ export default function Portfolio() {
           </div>
         </div>
         
-        <div id="app-5" className="project-card">
+        <div id="app-6" className="project-card">
           <h3>Task Management System</h3>
           <p className="project-description">
             <strong>Business Impact:</strong> Productivity tool for personal and team use<br/>
