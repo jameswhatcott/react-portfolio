@@ -27,6 +27,23 @@ export default function Portfolio() {
         </div>
         
         <div id="app-1" className="project-card">
+          <h3>Branches - Genealogy Web Platform</h3>
+          <p className="project-description">
+            <strong>Description:</strong> New ways to build your family history!<br/>
+            <strong>Technical Achievement:</strong> React app with MongoDB backend and graphQL
+          </p>
+          <a href="https://branches-gb9v.onrender.com/" className="project-link">
+            <img src='/images/branches.png' alt="Branches Data Visualization"/>
+          </a>
+          <div className="tech-stack">
+            <span className="tech-tag">React</span>
+            <span className="tech-tag">MongoDB</span>
+            <span className="tech-tag">BalkanGraphJS</span>
+            <span className="tech-tag">GraphQL</span>
+          </div>
+        </div>
+        
+        <div id="app-2" className="project-card">
           <h3>Enterprise Todo Management System</h3>
           <p className="project-description">
             <strong>Business Impact:</strong> Streamlined task management for teams<br/>
@@ -43,7 +60,7 @@ export default function Portfolio() {
           </div>
         </div>
         
-        <div id="app-2" className="project-card">
+        <div id="app-3" className="project-card">
           <h3>Angular Pokedex Application</h3>
           <p className="project-description">
             <strong>Business Impact:</strong> Interactive data visualization and user engagement<br/>
@@ -60,7 +77,7 @@ export default function Portfolio() {
           </div>
         </div>
         
-        <div id="app-3" className="project-card">
+        <div id="app-4" className="project-card">
           <h3>Interactive Gaming Platform</h3>
           <p className="project-description">
             <strong>Business Impact:</strong> Engaging user experience with modern UI<br/>
@@ -77,7 +94,7 @@ export default function Portfolio() {
           </div>
         </div>
         
-        <div id="app-4" className="project-card">
+        <div id="app-5" className="project-card">
           <h3>What's My Sky? Weather App</h3>
           <p className="project-description">
             <strong>Business Impact:</strong> User-friendly weather information platform<br/>
@@ -94,7 +111,7 @@ export default function Portfolio() {
           </div>
         </div>
         
-        <div id="app-5" className="project-card">
+        <div id="app-6" className="project-card">
           <h3>Weather Dashboard</h3>
           <p className="project-description">
             <strong>Business Impact:</strong> Clean, intuitive weather monitoring<br/>
@@ -111,7 +128,7 @@ export default function Portfolio() {
           </div>
         </div>
         
-        <div id="app-6" className="project-card">
+        <div id="app-7" className="project-card">
           <h3>Task Management System</h3>
           <p className="project-description">
             <strong>Business Impact:</strong> Productivity tool for personal and team use<br/>
