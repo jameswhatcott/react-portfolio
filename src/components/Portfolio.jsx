@@ -46,17 +46,14 @@ export default function Portfolio() {
         <div id="app-2" className="project-card">
           <h3>Enterprise Todo Management System</h3>
           <p className="project-description">
-            <strong>Business Impact:</strong> Streamlined task management for teams<br/>
-            <strong>Technical Achievement:</strong> Spring Boot microservice architecture
+            <strong>Business Impact:</strong> E-Commerce Shop for SD Coastal Customs<br/>
+            <strong>Technical Achievement:</strong> Built in Shopify with various plugins
           </p>
-          <a href="https://github.com/jameswhatcott/todo_api" className="project-link">
-            <img src='/images/todo-api.png' alt="Todo API"/>
+          <a href="https://sdcoastalcustoms.com" className="project-link">
+            <img src='/images/sdcoastalcustoms.png' alt="SD Coastal Customs"/>
           </a>
           <div className="tech-stack">
-            <span className="tech-tag">Spring Boot</span>
-            <span className="tech-tag">Java</span>
-            <span className="tech-tag">Microservices</span>
-            <span className="tech-tag">REST API</span>
+            <span className="tech-tag">Shopify</span>
           </div>
         </div>
         
