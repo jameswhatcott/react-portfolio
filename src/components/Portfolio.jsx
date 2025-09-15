@@ -10,19 +10,19 @@ export default function Portfolio() {
       
       <div className="projects-grid">
         <div id="app-0" className="project-card">
-          <h3>Social Network API Platform</h3>
+          <h3>FinFlow</h3>
           <p className="project-description">
-            <strong>Business Impact:</strong> Scalable backend for social applications<br/>
-            <strong>Technical Achievement:</strong> MongoDB-based API with advanced features
+            <strong>Description:</strong> Personal Finance Tracker designed for budgeting<br/>
+            <strong>Technical Achievement:</strong> Built in Java Spring-Boot
           </p>
-          <a href="https://social-network-api-ayyn.onrender.com/" className="project-link">
-            <img src='/images/socialmediaapi.png' alt="Social Network API"/>
+          <a href="https://github.com/jameswhatcott/finflow#" className="project-link">
+            <img src='/images/finflow.png' alt="FinFlow"/>
           </a>
           <div className="tech-stack">
-            <span className="tech-tag">MongoDB</span>
-            <span className="tech-tag">Node.js</span>
-            <span className="tech-tag">Express</span>
-            <span className="tech-tag">REST API</span>
+            <span className="tech-tag">Java</span>
+            <span className="tech-tag">ThymeLeaf</span>
+            <span className="tech-tag">Spring Boot</span>
+            <span className="tech-tag">Maven</span>
           </div>
         </div>
         
