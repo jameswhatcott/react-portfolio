@@ -44,7 +44,7 @@ export default function Portfolio() {
         </div>
         
         <div id="app-2" className="project-card">
-          <h3>Enterprise Todo Management System</h3>
+          <h3>SD Coastal Customs</h3>
           <p className="project-description">
             <strong>Business Impact:</strong> E-Commerce Shop for SD Coastal Customs<br/>
             <strong>Technical Achievement:</strong> Built in Shopify with various plugins
